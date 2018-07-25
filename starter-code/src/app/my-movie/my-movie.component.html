@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+        <span>ROOM {{movie.room}}</span> <span class="title">{{movie.title}}</span>
+        <div class="posterMargin">
+        <img class="poster" src="{{movie.poster}}">
+      </div>
+    </div>
+    <div class="col-md-8 textMargin">
+      
+        <p><b>Genres</b> {{movie.genres}}</p>
+        <p><b>Year </b>{{movie.year}}</p>
+        <p><b>Director</b> {{movie.director}}</p>
+        <p><b>Actors</b> {{movie.actors}}</p>
+        <p><b>Schedule</b> {{movie.hours}}</p>
+        <p><b>Synopsis</b></p>
+        <p>{{movie.synopsis}}</p>
+    
+        <a [routerLink]="['/home']" class="btn btn-primary align-self-center home">Home</a>
+      </div>
+  </div>
+</div>
